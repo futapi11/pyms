@@ -1,0 +1,25 @@
+MusicControl {
+    layout: horizontal;
+    align: center middle;
+    min-width: 50;
+    padding: 1;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+Filename {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    layout: horizontal;
+    align: center middle;
+}
+
+#playpause {
+    margin-left: 5;
+    margin-right: 5;
+}
+
+#maincon {
+    padding-top: 5;
+    padding-bottom: 5;
+}
