@@ -20,11 +20,13 @@ def Pygame_Init():
         file = sys.argv[1]
     except IndexError as e:
         print('file not found')
-        sys.exit(1)
+        exit(1)
     finally:
-        pygame.init()
-        mixer.music.load(file)
-        mixer.music.play()
+        exit(1)
+
+    pygame.init()
+    mixer.music.load(file)
+    mixer.music.play()
 
 
 Pygame_Init()
