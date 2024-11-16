@@ -22,7 +22,7 @@ def Pygame_Init():
         print('file not found')
         exit(1)
     finally:
-        exit(1)
+        pass
 
     pygame.init()
     mixer.music.load(file)
