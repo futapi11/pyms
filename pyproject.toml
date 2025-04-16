@@ -1,20 +1,21 @@
-[tool.poetry]
+[project]
 name = "pyms"
 version = "0.1.0"
-description = "python media suite"
-authors = ["sewerslider"]
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = ">=3.12,<3.14"
-pygame = "^2.6.0"
-textual = "^0.77.0"
-textual-dev = "^1.5.1"
-pynsist = "^2.8"
+requires-python = ">=3.13"
+dependencies = [
+    "pygame-ce>=2.5.2",
+    "textual>=1.0.0",
+    "textual-dev>=1.7.0",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.poetry.scripts]
-pyms = 'pyms.main:run'
+[tool.hatch.build.targets.wheel]
+packages = ["pyms"]
+
+[project.scripts]
+pyms = "pyms.main:run"
