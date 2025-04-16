@@ -1,4 +1,4 @@
-build:
+install:
 	uv run pipx install --force .
 
 clean:
